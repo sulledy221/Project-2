@@ -7,21 +7,16 @@ const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
+const beansRoutes = require('./routes/beans');
 
-// load the env consts
 require('dotenv').config();
 
-// create the Express app
 const app = express();
 
-// connect to the MongoDB with mongoose
 require('./config/database');
-// configure Passport
+
 require('./config/passport');
 
-
-
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -51,6 +46,7 @@ app.use(function (req, res, next) {
 
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
+app.use('/beans', beansRoutes)
 
 
 // invalid request, send 404 page

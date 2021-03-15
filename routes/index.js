@@ -3,8 +3,7 @@ const passport = require('passport');
 
 // The root route renders our only view
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Beans', user: null});
-
+  res.render('index', { title: 'Beanpods', user: null});
 });
 
 // Google OAuth login route
