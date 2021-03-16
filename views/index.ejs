@@ -12,13 +12,8 @@
 
 <body>
   <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a class="active" href="#news">News</a></li>
-    <li><a class="active" href="#contact">Contact</a></li>
-    <li style="float:right"><a class="active" href="#about">About</a></li>
-  </ul>
-  <ul class="right">
-    <li>
+    <li><a href="#home">Home</a></li>
+    <li style="float:right">
       <% if (user) { %>
         <a href="/logout"><i class="material-icons left"></i>Log Out</a>
         <% } else { %>
@@ -31,137 +26,161 @@
   </h1>
   <h2 class="intro">Choose your Cursed Zodiac</h2>
 <div class="container">
-  <div class="signs">
-  <p class="name">Aries March 20 – April 19 🔥♈️</p>
+  <div class="signs aries">
+    <div class="row">
+  <img src="https://www.tiktok.com/api/img/?itemId=6803474778901482758&location=0&aid=1988" class="img">
+</div>
+<div class="column">
+  <p class="name aries">Aries March 20 – April 19 🔥♈️</p>
   <p class="trait">Traits: No filter, forgetful memory, highly competitive </p>
-  <div class="row">
-<img src="https://www.tiktok.com/api/img/?itemId=6803474778901482758&location=0&aid=1988" class="img">
-    <form action="/Aries" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Taurus April 19 – May 20 🌱♉️</p>
+<form action="/Aries" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs taurus">
+  <div class="row">
+  <img src="https://i.pinimg.com/640x/09/5a/84/095a841bdba18e6882372fb73719e77e.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name taurus">Taurus April 19 – May 20 🌱♉️</p>
   <p class="trait">Traits: Homebody, dependable, stubborn </p>
-  <div class="row">
-<img src="https://i.pinimg.com/640x/09/5a/84/095a841bdba18e6882372fb73719e77e.jpg" class="img">
-    <form action="/Taurus" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Gemini May 20 – June 21 💨♊️</p>
+<form action="/Taurus" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs gemini">
+  <div class="row">
+  <img src="https://64.media.tumblr.com/a5b21901f92eabc9cdaa019edf126ec6/e8ce9ef2d61beafa-88/s400x600/ca41daf90905cd75b0551e5b36df58ec427bef41.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name gemini">Gemini May 20 – June 21 💨♊️</p>
   <p class="trait">Traits: Charasmatic, expressive, humurous </p>
-  <div class="row">
-<img src="https://64.media.tumblr.com/a5b21901f92eabc9cdaa019edf126ec6/e8ce9ef2d61beafa-88/s400x600/ca41daf90905cd75b0551e5b36df58ec427bef41.jpg" class="img">
-    <form action="/Gemini" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Cancer June 21 – July 22 💧♋️</p>
+<form action="/Gemini" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs cancer">
+  <div class="row">
+  <img src="https://i.pinimg.com/736x/bc/d5/b3/bcd5b3c7d95283c104a1aa423d7dfee8.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name cancer">Cancer June 21 – July 22 💧♋️</p>
   <p class="trait">Traits: Sensitive, caretaker, doesn't like change</p>
-  <div class="row">
-<img src="https://i.pinimg.com/736x/bc/d5/b3/bcd5b3c7d95283c104a1aa423d7dfee8.jpg" class="img">
-    <form action="/Cancer" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Leo July 22 – August 22 🔥♌️</p>
+<form action="/Cancer" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs leo">
+  <div class="row">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEKZTb0bJf8AwA5yX6pHTMPqZlxwy1DBVfQ&usqp=CAU" class="img">
+</div>
+<div class="column">
+  <p class="name leo">Leo July 22 – August 22 🔥♌️</p>
   <p class="trait">Traits: Big personality, creative, in charge</p>
-  <div class="row">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEKZTb0bJf8AwA5yX6pHTMPqZlxwy1DBVfQ&usqp=CAU" class="img">
-    <form action="/Leo" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Virgo August 22 – September 22 🌱♍️</p>
+<form action="/Leo" method="POST" class="form">
+  <input type="submit" value="Add Trait" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs virgo">
+  <div class="row">
+  <img src="https://i.pinimg.com/originals/10/54/0d/10540dd0b49196d9fa9663dd067fe9f9.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name virgo">Virgo August 22 – September 22 🌱♍️</p>
   <p class="trait">Traits: Judgemental, perfectionist, need to feel useful </p>
-  <div class="row">
-<img src="https://i.pinimg.com/originals/10/54/0d/10540dd0b49196d9fa9663dd067fe9f9.jpg" class="img">
-    <form action="/Virgo" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Libra September 22 – October 23 🌱♎️</p>
+<form action="/Virgo" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs libra">
+  <div class="row">
+  <img src="https://i.ytimg.com/vi/qjyGAdv1N6g/maxresdefault.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name libra">Libra September 22 – October 23 🌱♎️</p>
   <p class="trait">Traits: Indecisive, introvert AND extrovert, empathetic</p>
-  <div class="row">
-<img src="https://i.ytimg.com/vi/qjyGAdv1N6g/maxresdefault.jpg" class="img">
-    <form action="/Libra" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Scorpio October 23 – November 22 💧♏️</p>
+<form action="/Libra" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs scorpio">
+  <div class="row">
+  <img src="https://img.wattpad.com/e6a0b8fc856355efc22a5a5f8e187ba02c9b79c1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f386737647458524c4471626447413d3d2d3930363338333931382e3136313964366361343665666363643737323236323431353835352e6a7067?s=fit&w=720&h=720" class="img">
+</div>
+<div class="column">
+  <p class="name scorpio">Scorpio October 23 – November 22 💧♏️</p>
   <p class="trait">Traits: Fear vulnerability, lonely, very perceptive</p>
-  <div class="row">
-<img src="https://img.wattpad.com/e6a0b8fc856355efc22a5a5f8e187ba02c9b79c1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f386737647458524c4471626447413d3d2d3930363338333931382e3136313964366361343665666363643737323236323431353835352e6a7067?s=fit&w=720&h=720" class="img">
-    <form action="/Scorpio" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Sagittarius November 22 – December 21 🔥♐️</p> 
+<form action="/Scorpio" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs sagittarius">
+  <div class="row">
+  <img src="https://i.pinimg.com/originals/42/13/d1/4213d1982144ef41d9827a9aa9d4b295.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name sagittarius">Sagittarius November 22 – December 21 🔥♐️</p> 
   <p class="trait">Traits: Emotional opinion maker, friendliest, explorer</p>
-  <div class="row">
-<img src="https://i.pinimg.com/originals/42/13/d1/4213d1982144ef41d9827a9aa9d4b295.jpg" class="img">
-    <form action="/Sagittarius" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Capricorn December 22 – January 20 🌱♑️</p>
+<form action="/Sagittarius" method="POST class="form"">
+  <input type="submit" value="Add Traits"class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs capricorn">
+  <div class="row">
+  <img src="https://img-comment-fun.9cache.com/media/a2q6PL1/a764qVkb_700w_0.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name capricorn">Capricorn December 22 – January 20 🌱♑️</p>
   <p class="trait">Traits: Responsible, repressive, rule followers </p>
-  <div class="row">
-<img src="https://img-comment-fun.9cache.com/media/a2q6PL1/a764qVkb_700w_0.jpg" class="img">
-    <form action="/Capricorn" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Aquarius January 19 – February 18 💨♒️</p>
+<form action="/Capricorn" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs aquarius">
+  <div class="row">
+  <img src="https://pbs.twimg.com/media/D-9326AU8AApinn.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name aquarius">Aquarius January 19 – February 17 💨♒️</p>
   <p class="trait">Traits: "Outcast", personality collector, conspiracy theorist</p>
-  <div class="row">
-<img src="https://pbs.twimg.com/media/D-9326AU8AApinn.jpg" class="img">
-    <form action="/Aquarius" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
 </div>
-<div class="signs">
-  <p class="name">Pisces February 18 – March 20 💧♓️</p>
-  <p class="trait">Traits: Prone to fantasy, melancholy, no boundaires </p>
+<form action="/Aquarius" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
+</div>
+<div class="signs pisces">
   <div class="row">
-<img src="https://i.imgflip.com/4j5rjx.jpg" class="img">
-    <form action="/Pisces" method="POST">
-      <input type="submit" value="Add Traits"</input>
-      <input type="text" name="traits"></input>
-    </form>
-  </div>
+  <img src="https://i.imgflip.com/4j5rjx.jpg" class="img">
+</div>
+<div class="column">
+  <p class="name pisces">Pisces February 18 – March 20 💧♓️</p>
+  <p class="trait">Traits: Prone to fantasy, melancholy, no boundaires </p>
+</div>
+<form action="/Pisces" method="POST" class="form">
+  <input type="submit" value="Add Traits" class="input"></input>
+  <input type="text" name="traits"  class="text"></input>
+</form>
 </div>
 </div>
  
