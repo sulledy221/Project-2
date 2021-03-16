@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(88, 176, 182);
+  background-color: rgb(207, 129, 83);
   
 }
 
@@ -21,25 +21,73 @@
 }
 
 .img {
-  width: 175px;
-  height: 175px;
+  width: 220px;
+  height: 220px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.signs {
+  border: 1px solid black;
+  margin-bottom: 25px;
 }
 
 .right {
     color: blue;
+    text-align:end;
     
 }
 
 .intro {
   font-family: 'Cormorant Unicase', serif;
   font-size: 47px;
+  text-align: center;
 }
 
 .name {
   font-family: 'Cormorant Unicase', serif;
   font-size: 35px;
+  text-decoration: underline overline #a04242;
+  
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
 }
 
 .trait {
   font-family: 'Redressed', cursive;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(230, 4, 4, 0.424);
+}
+
+.active {
+  background-color: #c22f2fb0;
 }
