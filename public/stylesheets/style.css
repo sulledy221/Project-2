@@ -1,5 +1,6 @@
-.brand-logo {
-  margin-left: 15px;
+* {
+  background-color: rgb(142, 207, 123);
+  
 }
 
 .card .card-content .card-title {
@@ -17,4 +18,14 @@
 
 .collection-item form {
   margin-top: -5px;
+}
+
+.img {
+  width: 175px;
+  height: 175px;
+}
+
+.right {
+    color: orange;
+    
 }
