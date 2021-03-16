@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(142, 207, 123);
+  background-color: rgb(114, 202, 118);
   
 }
 
@@ -23,9 +23,21 @@
 .img {
   width: 175px;
   height: 175px;
+  align-self: center;
 }
 
 .right {
-    color: orange;
+    color: blue;
     
+}
+
+.intro {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 47px;
+}
+
+.name {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 35px;
+  text-align: center;
 }
