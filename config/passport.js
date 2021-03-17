@@ -31,27 +31,30 @@ passport.use(new GoogleStrategy({
   }
 )
 )
-passport.serializeUser(function (bean, done) {
-  done(null, bean.id);
-});
+// passport.serializeUser(function (bean, done) {
+//   done(null, bean.id);
+// });
 
-passport.deserializeUser(function (id, done) {
-  Bean.findById(id, function (err, bean) {
-    done(err, bean);
-  });
-});
+// passport.deserializeUser(function (id, done) {
+//   Bean.findById(id, function (err, bean) {
+//     done(err, bean);
+//   });
+// });
 
 passport.serializeUser(function (user, done) {
   done(null, user.id);
+
 }),
 
   passport.deserializeUser(function (id, done) {
+    User.findById(id, function (err, user) {
+          done(err, user);
 
     // Find your User, using your model, and then call done(err, whateverYourUserIsCalled)
     // When you call this done function passport assigns the user document to req.user, which will 
     // be availible in every Single controller function, so you always know the logged in user
 
   });
-
+})
 
 

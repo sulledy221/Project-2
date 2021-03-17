@@ -5,6 +5,7 @@ module.exports = {
 };
 
 function index(req, res) {
-    res.render('beans/index');
+   res.render('beans/index',  { title: 'Beanpods', user: req.user});
 }
+
 

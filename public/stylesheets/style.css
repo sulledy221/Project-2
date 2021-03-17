@@ -81,9 +81,9 @@ column {
 .name {
   font-family: 'Cormorant Unicase', serif;
   font-size: 50px;
-  text-decoration: underline overline #a04242;
+  text-decoration: underline overline #a54040;
   text-align: center;
-  
+  margin: 10px;
 }
 
 .row{
@@ -96,6 +96,7 @@ column {
   font-family: 'Redressed', cursive;
   font-size: 45px;
   text-align: center;
+  margin: 10px;
 }
 
 ul {
