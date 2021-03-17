@@ -1,11 +1,17 @@
-const Bean = require('../models/bean');
+const Sign = require('../models/sign');
 
 module.exports = {
-    index
+    index,
+    show
 };
 
 function index(req, res) {
    res.render('beans/index',  { title: 'Beanpods', user: req.user});
 }
 
+function show(req, res) {
+    Sign.findOne({ name: req.params.sign }, function (err, sign) {
+    res.render ('beans/show',  { title: 'Beanpods', user: req.user, sign })
+})
+}
 
