@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const SignSchema =  new Schema({
     name: String,
     dateRange: String,
-    traits: [String]
+    traits: [String],
+    img: String
 })
 
 

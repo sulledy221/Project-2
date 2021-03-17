@@ -10,7 +10,9 @@ function index(req, res) {
 }
 
 function show(req, res) {
+
     Sign.findOne({ name: req.params.sign }, function (err, sign) {
+        console.log('show ', sign)
     res.render ('beans/show',  { title: 'Beanpods', user: req.user, sign })
 })
 }
