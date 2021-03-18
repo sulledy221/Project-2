@@ -23,25 +23,3 @@ function index(req, res) {
  })
  }
  
-
-
-// const Todo = require("../models/todo");
-
-// Todo.findByIdAndUpdate(
-//     req.params.todoId,
-//     req.body,
-//     {new: true},
-//     (err, todo) => {
-//         if (err) return res.status(500).send(err);
-//         return res.send(todo);
-//     }
-// )
-
-// Todo.findByIdAndRemove(req.params.todoId, (err, todo) => {
-//     if (err) return res.status(500).send(err);
-//     const response = {
-//         message: "Todo successfully deleted",
-//         id: todo._id
-//     };
-//     return res.status(200).send(response);
-// });

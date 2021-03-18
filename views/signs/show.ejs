@@ -25,10 +25,14 @@
     <h1> <%= sign.dateRange %> </h1>
     <img src="<%= sign.img %>" class="img">
     <h1> <%= sign.traits.join(', ') %> </h1>
-    <h1> <%= traits.map(t => t.name).join(", ") %> </h1>
+    <% traits.forEach(function(t) { %>
+      <a href="/signs/<%=  sign.name %>/traits/edit/<%= t._id %>"><%= t.name %></a>
+      <hr>
+<% }); %>
 <form action="/signs/<%= sign.name %>/trait" method="POST" class="form">
   <input type="submit" value="Add Traits" class="input"></input>
   <input type="text" name="name"  class="text"></input>
+  <input type="text" name="sign" class="sign-id" value="<%= sign._id %>"></input>
 </form> 
  
   
