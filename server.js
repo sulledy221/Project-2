@@ -7,7 +7,7 @@ const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
-const beansRoutes = require('./routes/beans');
+const signsRoutes = require('./routes/signs');
 
 require('dotenv').config();
 
@@ -46,7 +46,7 @@ app.use(function (req, res, next) {
 
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
-app.use('/beans', beansRoutes)
+app.use('/signs', signsRoutes)
 
 
 // invalid request, send 404 page

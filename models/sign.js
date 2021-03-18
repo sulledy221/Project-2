@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-
 const SignSchema =  new Schema({
     name: String,
     dateRange: String,

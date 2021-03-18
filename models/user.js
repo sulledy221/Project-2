@@ -7,7 +7,5 @@ const UserSchema =  new Schema({
     email: String
 })
 
-
-
 module.exports = mongoose.model('User', UserSchema);
 // Create your User Model
