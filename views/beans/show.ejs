@@ -11,20 +11,21 @@
 <body class="show">
     <ul class="right">
         <li><a href="/beans">Home</a></li>
-    <li>
-      <% if (user) { %>
-        <a href="/logout"><i class="material-icons left"></i>Log Out</a>
-        <% } else { %>
-          <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
-          <% } %>
-    </li>
-    </ul>
+            <li style="float:right">
+              <% if (user) { %>
+                <a href="/beans/logout"><i class="material-icons left"></i>Log Out</a>
+                <% } else { %>
+                  <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
+                  <% } %>
+            </li>
+          </ul>
+    
 
     <h1> <%= sign.name %> </h1>
     <h1> <%= sign.dateRange %> </h1>
     <img src="<%= sign.img %>" class="img">
     <h1> <%= sign.traits.join(', ') %> </h1>
-<form action="/<%= sign.name %>" method="POST" class="form">
+<form action="/signs/<%= sign.name %>" method="POST" class="form">
   <input type="submit" value="Add Traits" class="input"></input>
   <input type="text" name="traits"  class="text"></input>
 </form> 
