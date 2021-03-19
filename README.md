@@ -1,34 +1,13 @@
-# passport-boilerplate
 
 
-This is your passport boilerplate.
+☐ BeanPods: This app includes zodiac signs and their traits along with cursed images of beans. The user will be able add traits, edit traits, and delete them as well
 
-## Setup 
+☐ MongoDB, JavaScript, Node.js, Heroku, Google OAuth, Atlas, HTML, CSS
 
-1. Clone the repo
-2. Rename the folder to your Project
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+☐ https://beanpods.herokuapp.com/signs
 
-
-#### Setup your git repo
-1. in the project root `git init`
-2. `git add .` to add all the starter code
-3. `git commit -m "setup boilerplate"` 
-4. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-5. copy the remote address
-6. In your terminal add the remote `git remote add origin yourGithubRepo'sAddressGoesHere`
-7. `git pull origin master` If a screen pulls up asking you to do something just press `:q` and then `enter` (thats vim btw :) )
-8. `git push origin master`
-
-#### Setup your login
-
-0. Setup your database connection string
-1. Then Setup Your User Model, 
-2. Follow the steps from the lesson plan to get your Google login credentials for your `.env` file
-3. Setup the Code in your config passport 
-4. Setup your call back routes in your `routes/index`
-5. Setup a view and test your login!
-
-#### Make a commit 
-
-```git commit -m "setup up oauth and User Model"```
+☐ <img width="1122" alt="Screen Shot 2021-03-18 at 10 31 56 PM" src="https://user-images.githubusercontent.com/77522583/111735792-d8fe7400-8839-11eb-97ee-35580a3cfc5f.png">
+<img width="1431" alt="Screen Shot 2021-03-18 at 10 34 06 PM" src="https://user-images.githubusercontent.com/77522583/111736005-3b577480-883a-11eb-9ae8-9561bb59121a.png">
+<img width="542" alt="Screen Shot 2021-03-18 at 10 34 26 PM" src="https://user-images.githubusercontent.com/77522583/111736007-3c88a180-883a-11eb-9589-775d2ec10537.png">
+<img width="547" alt="Screen Shot 2021-03-18 at 10 34 51 PM" src="https://user-images.githubusercontent.com/77522583/111736009-3db9ce80-883a-11eb-8b8a-75c862f79da3.png">
+<img width="539" alt="Screen Shot 2021-03-18 at 10 35 02 PM" src="https://user-images.githubusercontent.com/77522583/111736011-3e526500-883a-11eb-84d0-344a64bdf840.png">
