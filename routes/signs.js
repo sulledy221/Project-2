@@ -11,7 +11,4 @@ router.get('/:sign/traits/edit/:id', traitsCtrl.show)
 router.post('/:sign/traits/edit/:id', traitsCtrl.edit)
 router.post('/:sign/traits/delete/:id', traitsCtrl.delete)
 
-// router.delete('/' signsCtrl)
-// router.delete('/' signsCtrl)
-
 module.exports = router;
